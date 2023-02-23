@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ImcActivity">
+
+        <TextView
+            style="@style/TextViewForms"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/imc_desc" />
+
+        <EditText
+            android:id="@+id/edit_imc_weight"
+            style="@style/EditTextForms"
+            android:backgroundTint="@color/white"
+            android:hint="@string/weight"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/edit_imc_height"
+            style="@style/EditTextForms"
+            android:backgroundTint="@color/white"
+            android:shadowColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="@string/height" />
+
+        <Button
+            android:id="@+id/btn_imc_send"
+            style="@style/ButtonForms"
+            android:backgroundTint="@color/colorLightGray"
+            android:textColor="@color/black"
+            android:text="@string/calc" />
+    </LinearLayout>
+</ScrollView>
